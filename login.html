@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <style>
+            .oimg{
+                background-image: url("jinx.jpg");
+                height: 100%;
+                background-size: cover;
+                filter: blur(5px);
+                -webkit-filter: blur(10px);
+                background-position: center;
+                background-repeat: no-repeat;
+
+            }
+            .iimg h1{
+                color:white;
+                text-align: center;
+                margin-top: -10px;
+                text-decoration: underline;
+            }
+            .iimg{
+                background-color: rgb(0,0,0); 
+                background-color: rgba(0,0,0, 0.4); 
+                color:#f1f1f1;
+                border: 2px solid #f1f1f1;
+                font-weight: bold;
+                top: 50%;
+                left: 50%;
+                transform: translate(60%,-50%);
+                z-index: 2;
+                width: 35%;
+                padding: 40px;
+                margin-top: -30%;
+                
+            }
+            .iimg a{
+                color: white;
+                margin-top: 10px ;
+                padding: 10px;
+            }
+            .iimg input{
+                border: none;
+                height: 30px;
+                font-weight: bold;
+            }
+            table tr{
+                margin-top: 20px;
+            }
+
+            table button{
+                font-weight: bold;
+                width: 100px;
+                height: 30px;
+                background-color: blue;
+                border: blue;
+                border-radius: 10px;
+                margin-top: 20px;
+                margin-left: 10px;
+                color:#f1f1f1
+            }
+            table button:hover{
+                background-color: #f1f1f1;
+                color:black;
+                border: 3px solid blue;
+            }
+			label{
+			color:white;
+			}
+        </style>
+    </head>
+    <body>
+        <div class="oimg"></div>
+        <div class="iimg">
+            <h1>Login</h1>
+            <form>
+                <table>
+                    <tr>
+                        <th><label>Mobile number</label></th>
+                        <td><input type="text" placeholder="Enter mobile number"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Password</label></th>
+                        <td><input type="password" placeholder="Enter password"></td>
+                    </tr>
+                    <tr>
+                        <th><button>Login</button></th>
+                        <td><button>Sign Up</button></td>
+                    </tr>
+                   <tr><td colspan="2"><a href="#">Click if forget password</a></td></tr> 
+                </table>
+            </form>
+            
+        </div>
+    </body>
+</html>
